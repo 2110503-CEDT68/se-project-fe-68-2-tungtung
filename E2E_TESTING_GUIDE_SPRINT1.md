@@ -398,6 +398,21 @@ Use this checklist to track which tests have been completed:
 
 ### US2-1: Send Message
 - [ ] Positive: Send message successfully
+- [ ] Negative: Send without login
+- [ ] Negative: Send empty message
+- [ ] Negative: Send message too long
+
+### US2-2: Receive Messages from Admins
+- [ ] Positive: Receive and view admin messages
+- [ ] Negative: View messages without login
+- [ ] Negative: Try to view another user's messages
+
+## Notes
+
+- This document was updated on April 28, 2026.
+- These changes are documentation-only and do not modify application code.
+- Use this checklist to confirm manual E2E coverage for review and chat flows.
+
 - [ ] Negative: Not logged in
 - [ ] Negative: Empty message
 - [ ] Negative: Message too long

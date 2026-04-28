@@ -302,4 +302,10 @@ This guide helps testers manually test Sprint 2 features. Each feature has **pos
 ✅ Confirmation dialogs appear before destructive actions  
 ✅ Non-authenticated users redirected to login
 
+## Notes
+
+- This document was reviewed and updated on April 28, 2026.
+- The updates are documentation-only and do not change application behavior.
+- Use this guide together with the frontend and backend test environments for accurate validation.
+
 

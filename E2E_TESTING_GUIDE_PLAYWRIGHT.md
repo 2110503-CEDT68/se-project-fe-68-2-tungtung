@@ -45,3 +45,24 @@ For a visible browser:
 ```powershell
 npm run test:e2e:headed
 ```
+
+## Notes
+
+- Ensure the backend and frontend URLs match the environment variables before running tests.
+- Use a new user and admin account for repeatable test results.
+- This guide was reviewed and updated on April 28, 2026.
+
+## Environment Variables
+
+Set these variables when the default URLs are different from the local setup:
+
+- `PLAYWRIGHT_BASE_URL=http://127.0.0.1:3000`
+- `PLAYWRIGHT_BACKEND_URL=http://127.0.0.1:5000`
+
+You can define them in a `.env` file or export them in your shell before running tests.
+
+## Troubleshooting
+
+- If the test cannot connect, verify Docker containers are running and ports 3000/5000 are available.
+- If login fails, clear browser storage or use a fresh app session.
+- If the test command does not exist, install the dependencies with `npm install` first.
